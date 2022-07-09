@@ -9,10 +9,10 @@
     "data_loader": {
         "type": "MnistKaggleDataLoader",
         "args":{
-            "data_dir": "data/test.csv",
+            "data_dir": "../input/digit-recognizer/train.csv",
             "batch_size": 128,
-            "shuffle": false,
-            "validation_split": 0.1,
+            "shuffle": true,
+            "validation_split": 0.2,
             "num_workers": 2
         }
     },
@@ -39,7 +39,7 @@
         "epochs": 1,
 
         "save_dir": "saved/",
-        "save_period": 1,
+        "save_period": 10,
         "verbosity": 2,
         
         "monitor": "min val_loss",
