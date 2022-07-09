@@ -9,7 +9,7 @@
     "data_loader": {
         "type": "MnistKaggleDataLoader",
         "args":{
-            "data_dir": "../input/digit-recognizer/train.csv",
+            "data_dir": "../../input/digit-recognizer/train.csv",
             "batch_size": 128,
             "shuffle": true,
             "validation_split": 0.2,
